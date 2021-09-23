@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class LastLetterWord {
 
     /*
@@ -9,9 +11,39 @@ public class LastLetterWord {
     Ex:  Goodbye, Hello, Morning -> byelloing
     */
 
+    /* The Plan
+    1. Get Input
+    2. Isolate last three letters of any word
+    3. Combine 2. of all three words
+    4. Display results
+    */
+
+
     public static void main(String[] args) {
 
+        String wordOne = JOptionPane.showInputDialog("Enter word one.");
+        String wordTwo = JOptionPane.showInputDialog("Enter word two.");
+        String wordThree = JOptionPane.showInputDialog("Enter word three.");
 
+        String output = lastThree(wordOne) + lastThree(wordTwo) + lastThree(wordThree);
+
+        JOptionPane.showMessageDialog(null, output);
+
+        System.exit(0);
+
+    }
+
+    public static String lastThree(String word){
+
+        String newWord;
+
+        if(word.length() <=3) {
+            newWord = word;
+        }else{
+            newWord = word.substring(word.length()-3);
+        }
+
+        return newWord;
 
     }
 
