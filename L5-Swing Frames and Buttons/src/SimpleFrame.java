@@ -9,7 +9,7 @@ public class SimpleFrame
     {
         JFrame window = new JFrame("This is a simple window.");
         JPanel panel = new JPanel();
-        JButton button = new JButton("Click for 1 Vbuck");
+        JButton button = new JButton("Click for 1 VBuck");
 
         window.setSize(800, 600);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -31,7 +31,7 @@ public class SimpleFrame
 
         public void actionPerformed(ActionEvent e){
 
-            JOptionPane.showMessageDialog(null, "You just got a Vbuck");
+            JOptionPane.showMessageDialog(null, "You just got a VBuck");
 
         }
 
