@@ -27,14 +27,14 @@ public class ColorSwitchGUI {
         //create your GUI
 
         window = new JFrame("Color Switch");
-        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.setSize(340, 127);
-        window.setLocationRelativeTo(null);
-
         panel = new JPanel();
         colorClicker1 = new JButton("Change the Colors");
         colorClicker2 = new JButton("Change the Colors");
         colorClicker3 = new JButton("Change the Colors");
+
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setSize(340, 127);
+        window.setLocationRelativeTo(null);
 
         colorClicker1.addActionListener(new ColorChanger1());
         colorClicker2.addActionListener(new ColorChanger2());
